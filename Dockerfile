@@ -7,5 +7,5 @@ RUN git clone https://github.com/pybox2d/pybox2d
 WORKDIR pybox2d
 RUN python setup.py build
 RUN python setup.py install
-RUN apt-get autoremove
+RUN apt-get autoremove -y
 WORKDIR /
